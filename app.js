@@ -21,11 +21,12 @@ app.use(session({
 //    Ajusta "realm", "auth-server-url" y "resource" según tu entorno
 const keycloakConfig = {
   "realm": "CybersecurityRealm",                    // Nombre del Realm
-  "auth-server-url": "http://localhost:8080/auth/", // URL base de Keycloak
+  "auth-server-url": "http://localhost:8080/", // URL base de Keycloak
   "ssl-required": "none",
   "resource": "api-client",                         // Cliente creado en Keycloak
   "public-client": false,                           // false si es Confidential
-  "confidential-port": 0
+  "confidential-port": 0,
+  // "bearer-only": true
 };
 
 //Crear la instancia de Keycloak
