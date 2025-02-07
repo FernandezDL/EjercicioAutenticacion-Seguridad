@@ -188,6 +188,9 @@ curl -X GET http://localhost:3000/public
 
 ```
 
+![image](https://github.com/user-attachments/assets/b86878ac-3758-403c-a3f5-e57b544965b1)
+
+
   
 
 * Intentar acceder al endpoint protegido sin token:
@@ -198,7 +201,8 @@ curl -X GET http://localhost:3000/private
 
 ```
 
-  
+  ![image](https://github.com/user-attachments/assets/bb503f09-6a10-4ae8-a611-0a1caf688dbf)
+
 
 * Acceder al endpoint protegido con un token válido:
 
@@ -208,7 +212,8 @@ curl -X GET http://localhost:3000/private -H "Authorization: Bearer <access_toke
 
 ```
 
-  
+  ![image](https://github.com/user-attachments/assets/4c166146-8bdd-4d80-82b2-bcf9db9052a3)
+
 
 * Enviar datos al endpoint protegido:
 
@@ -223,6 +228,7 @@ curl -X POST http://localhost:3000/data \
 -d '{"name": "Diana", "message": "Hola"}'
 
 ```
+![image](https://github.com/user-attachments/assets/6945368d-3f59-4acc-90cc-2b6e46ea50e8)
 
   
 
