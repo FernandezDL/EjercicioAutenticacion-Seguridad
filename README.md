@@ -43,9 +43,6 @@ Se implementará una API simple con los siguientes endpoints:
 
 `GET /data` : Acepta datos en formato JSON y devuelve una confirmación (Requiere autenticación con un token válido).
 
-<p align="right">(<a href="#readme-top">Ir al inicio</a>)</p>
-
-
 ## ⚙️ Configuración de Keycloak 
 
 ### Instalación y Ejecución de Keycloak con Docker
@@ -74,8 +71,6 @@ Se ejecuta el siguiente comando para iniciar Keycloak en modo de desarrollo:
 
 4. Crear un usuario de prueba con nombre de usuario `testuser` y contraseña `password`.
 
-<p align="right">(<a href="#readme-top">Ir al inicio</a>)</p>
-
 ## 🔒 Asegurando la API
 
 Para validar los tokens JWT emitidos por Keycloak:
@@ -100,14 +95,14 @@ Para validar los tokens JWT emitidos por Keycloak:
 
 Ejecutar el siguiente comando en cURL para autenticar un usuario y obtener un `access_token`:
 
-    ```bash
+  ```bash
     curl -X POST \
     -d "client_id=api-client" \
     -d "username=testuser" \
     -d "password=password" \
     -d "grant_type=password" \
     "http://localhost:8080/realms/CybersecurityRealm/protocol/openid-connect/token"
-    ```
+  ```
 
 El resultado incluirá un campo `access_token`, que se usará para autenticarse en la API.
 
@@ -146,4 +141,6 @@ El resultado incluirá un campo `access_token`, que se usará para autenticarse 
 
 ### 🚀 ¡Listo para probar la seguridad del API! 🎯
 
+
+<p align="left">(<a href="#readme-top">Ir al inicio</a>)</p>
 
